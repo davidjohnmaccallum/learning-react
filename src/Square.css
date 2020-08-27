@@ -1,0 +1,29 @@
+.square {
+  background-color: red;
+  color: white;
+  display: flex;
+  width: 3rem;
+  height: 3rem;
+  justify-content: center;
+  align-items: center;
+  font-size: large;
+  text-decoration: none;
+  border: 1px solid black;
+}
+
+.square.winning {
+  background-color: yellow;
+  color: gray;
+}
+
+.square:focus {
+  outline: none;
+}
+
+.square:active {
+  transform: scale(0.97, 0.97);
+}
+
+.winner {
+  align-self: center;
+}
