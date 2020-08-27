@@ -9,14 +9,14 @@ const winningPositions = [
   [2,4,6],
 ];
 
-const checkWinningPlayer = (board) => {
+export const checkWinningPlayer = (board) => {
   for (let position of winningPositions) {
     if (_isWin(board, position)) return board[position[0]]
   }
   return ''
 };
 
-const getWinningSquares = (board) => {
+export const getWinningSquares = (board) => {
   for (let position of winningPositions) {
     if (_isWin(board, position)) return position;
   }
@@ -24,8 +24,3 @@ const getWinningSquares = (board) => {
 };
 
 const _isWin = (board, position) => board[position[0]] === board[position[1]] && board[position[0]] === board[position[2]];
-
-module.exports = {
-  checkWinningPlayer,
-  getWinningSquares,
-};

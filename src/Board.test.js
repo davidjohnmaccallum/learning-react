@@ -64,14 +64,7 @@ test("start board", () => {
       </div>
       <div
         class="history"
-      >
-        <button>
-          Undo
-        </button>
-        <button>
-          Redo
-        </button>
-      </div>
+      />
     </div>
   `);
 });
@@ -144,9 +137,6 @@ test("select a square", () => {
       >
         <button>
           Undo
-        </button>
-        <button>
-          Redo
         </button>
       </div>
     </div>
@@ -235,9 +225,6 @@ test("win a game", () => {
       >
         <button>
           Undo
-        </button>
-        <button>
-          Redo
         </button>
       </div>
     </div>
